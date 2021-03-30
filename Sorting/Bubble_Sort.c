@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main(){
+    int ara[] = {8,2,4,1,5};
+    int i,j,min_index,temp,len = sizeof(ara)/sizeof(ara[0]);
+    printf("Before Sorting.\n");
+    for(i=0; i<len; i++)
+        printf("%d ",ara[i]);
+
+    // Bubble sorting implementation start
+    for(i=0; i<len; i++){
+        for(j=0; j<len-i-1; j++)
+            if(ara[j]>ara[j+1]){
+                temp = ara[j];
+                ara[j] = ara[j+1];
+                ara[j+1]=temp;
+            }
+    }
+    // Bubble sorting implementation end
+
+    printf("\n\nAfter sorting.\n");
+    for(i=0; i<len; i++)
+        printf("%d ",ara[i]);
+    printf("\n");
+}
+
+
