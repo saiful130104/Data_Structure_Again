@@ -2,7 +2,7 @@
 
 int main(){
     int ara[] = {8,2,4,1,5};
-    int i,j,min_index,temp,len = sizeof(ara)/sizeof(ara[0]);
+    int i,j,temp,len = sizeof(ara)/sizeof(ara[0]);
     printf("Before Sorting.\n");
     for(i=0; i<len; i++)
         printf("%d ",ara[i]);
